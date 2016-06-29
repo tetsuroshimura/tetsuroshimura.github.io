@@ -40,11 +40,26 @@ hr {
       a {
         text-decoration: none;
         color: #000000;
-      }
-        &:hover {
-          text-decoration: underline;
-          transition: all 0.2s linear;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 3px;
+          background-color: #000000;
+          transition: all .2s ease;
         }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
