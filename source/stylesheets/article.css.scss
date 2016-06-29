@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import "normalize";
+
+* {
+  margin: 0; padding: 0;
+}
+
+body {
+  background: #fffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.logo img {
+  width: 60px;
+  margin-top: 100px;
+  margin-left: 50px;
+  float: left;
+  position: fixed;
+}
+
+.works {
+  clear: left;
+}
+
+.worksImg {
+  text-align: center;
+   img {
+     width: 70%;
+     margin-top: 100px;
+     text-align: center;
+   }
+}
+.textWrapper {
+  width: 70%;
+  padding-top: 100px;
+  margin: 0 auto;
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .worksText {
+    font-size: 18px;
+    line-height: 1.8em;
+    padding-top: 40px;
+  }
+}
+.LaunchButton {
+  margin-top: 80px;
+  .buttonText {
+    text-align: center;
+    a {
+      display: block;
+      width: 400px;
+      height: 80px;
+      border: 1px solid #000000;
+      text-decoration: none;
+      color: #000000;
+      font-size: 24px;
+      line-height: 80px;
+      &:hover {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.worksWrapper {
+  text-align: center;
+  clear: left;
+}
+
+.worksList {
+  margin-top: 260px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  width: 70%;
+  ul.worksTitle {
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    li {
+      list-style: none;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.6em;
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+        &:hover {
+          text-decoration: underline;
+        }
+    }
+  }
+}
+
+h1 {
+  color: rgba(0,0,0,0.5);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+  clear: left;
+}
+
+.doc {
+  margin: 3em 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+
+  a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.75em 0.7em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    &:hover {
+      background: rgba(0,0,0,0.2);
+      color: white;
+      transition: all 0.15s linear;
+    }
+  }
+}

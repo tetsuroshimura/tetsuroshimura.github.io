@@ -2,11 +2,12 @@ title: SHIANBROWN
 
 div.welcome
   div.logo
-    = image_tag "shianbrown_logo.svg"
-  div.works
+    a href="../index.html"
+      = image_tag "shianbrown_logo_vertical.svg"
+  div.worksList
     ul.worksTitle
       li
-        a href="#" Philip K Dick Brand Site
+        a href="posts/Philip_K_Dick_Brand_Site" Philip K Dick Brand Site
       li
         a href="#" ONE HUNDRED PERCENT ISSUE 001
       li
@@ -31,7 +32,9 @@ div.welcome
       |<br> Member of Uniba Inc.
       |<br> Contact
       |<br> shianbrown@gmail.com
-      |<br> instagram
-      |<br> Tumblr
+      a href="https://www.instagram.com/shianbrown/"
+        |<br> instagram
+      a href="http://shianbrown.tumblr.com/"
+        |<br> Tumblr
   p.doc
     = link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank"
