@@ -8,6 +8,7 @@
 body {
   background: #fffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: 1em;
 }
 
@@ -34,9 +35,11 @@ hr {
     width: 70%;
     li {
       list-style: none;
-      font-size: 60px;
-      font-weight: 500;
-      line-height: 1.6em;
+      font-size: 70px;
+      line-height: 1.2em;
+      font-weight: 800;
+      text-align: justify;
+      transform: scale( 1 , 0.7 );
       a {
         text-decoration: none;
         color: #000000;
@@ -49,9 +52,9 @@ hr {
           bottom: 0;
           left: 0;
           width: 0;
-          height: 3px;
+          height: 4px;
           background-color: #000000;
-          transition: all .2s ease;
+          transition: all .1s ease;
         }
 
         &:hover {
@@ -65,20 +68,37 @@ hr {
 }
 .profile {
   font-size: 30px;
-  padding-top: 80px;
+  padding-top: 60px;
   width: 70%;
   margin: 0 auto;
   p {
-    line-height: 1.6em;
+    line-height: 1.3em;
     font-weight: 500;
+    transform: scale( 1 , 0.8 );
     a {
       text-decoration: none;
       color: #000000;
-    }
-      a:hover {
-        text-decoration: underline;
-        transition: all 0.2s linear;
+      display: inline-block;
+      position: relative;
+      text-align: left;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #000000;
+        transition: all .1s ease;
       }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -96,10 +116,20 @@ hr {
     color: white;
     text-decoration: none;
     transition: color 0.1s linear;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: #000000;
+      transition: all .1s ease;
+    }
     &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
+      &::after {
+        width: 100%;
+      }
     }
   }
 }
