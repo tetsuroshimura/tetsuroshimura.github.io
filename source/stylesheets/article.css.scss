@@ -131,14 +131,12 @@ hr {
           bottom: 0;
           left: 0;
           width: 0;
-          height: 3px;
+          height: 5px;
+          background-color: #000000;
           transition: all .1s ease;
         }
 
         &:hover {
-          &::before {
-            color: #ffffff;
-          }
           &::after {
             width: 100%;
           }
@@ -146,15 +144,6 @@ hr {
       }
     }
   }
-}
-
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
-  clear: left;
 }
 
 .profile {
