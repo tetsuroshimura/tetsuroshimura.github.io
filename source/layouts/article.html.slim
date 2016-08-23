@@ -13,4 +13,6 @@ html
     = javascript_include_tag :all
 
   body class="= page_classes "
-    == yield
+    .body(style="background-color: #{current_page.data.bgColor}")
+      == yield
+      == partial "partials/footer"

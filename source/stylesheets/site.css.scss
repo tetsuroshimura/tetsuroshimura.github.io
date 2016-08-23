@@ -35,10 +35,9 @@ hr {
     width: 70%;
     li {
       list-style: none;
-      font-size: 70px;
+      font-size: 60px;
       line-height: 1.2em;
       font-weight: 800;
-      text-align: justify;
       transform: scale( 1 , 0.7 );
       a {
         text-decoration: none;
@@ -52,7 +51,7 @@ hr {
           bottom: 0;
           left: 0;
           width: 0;
-          height: 4px;
+          height: 5px;
           background-color: #000000;
           transition: all .1s ease;
         }
@@ -72,7 +71,7 @@ hr {
   width: 70%;
   margin: 0 auto;
   p {
-    line-height: 1.3em;
+    line-height: 1.5em;
     font-weight: 500;
     transform: scale( 1 , 0.8 );
     a {
@@ -97,38 +96,6 @@ hr {
         &::after {
           width: 100%;
         }
-      }
-    }
-  }
-}
-
-
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 4px;
-      background-color: #000000;
-      transition: all .1s ease;
-    }
-    &:hover {
-      &::after {
-        width: 100%;
       }
     }
   }
