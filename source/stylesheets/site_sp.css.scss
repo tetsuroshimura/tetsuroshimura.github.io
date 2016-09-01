@@ -6,39 +6,43 @@
 }
 
 body {
-  background: #fffff;
+  background: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em;
 }
 
 .logo {
-  width: 60px;
-  margin-top: 100px;
-  margin-left: 50px;
+  width: 40px;
+  top: -80px;
+  margin-top: 0px;
+  margin-left: 110px;
+  transform: rotate(-90deg);
+  float: none;
+  position: fixed;
   float: left;
   position: fixed;
 }
 hr {
   border-top: 1px solid;
   margin-right: 60px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .worksList {
+  margin-top: 100px;
   ul.worksTitle {
     overflow: hidden;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-top: 80px;
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     li {
       list-style: none;
-      font-size: 60px;
+      font-size: 28px;
       line-height: 1.2em;
       font-weight: 800;
-      transform: scale( 1 , 0.7 );
       a {
         text-decoration: none;
         color: #000000;
@@ -46,35 +50,28 @@ hr {
         position: relative;
 
         &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 5px;
-          background-color: #000000;
-          transition: all .1s ease;
+          background-color: none;
         }
 
         &:hover {
           &::after {
-            width: 100%;
+            width: 0%;
           }
         }
+
       }
     }
   }
 }
 .profile {
-  font-size: 30px;
-  padding-top: 60px;
-  padding-bottom: 100px;
-  width: 70%;
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 90%;
   margin: 0 auto;
   p {
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-weight: 500;
-    transform: scale( 1 , 0.8 );
     a {
       text-decoration: none;
       color: #000000;
@@ -83,21 +80,15 @@ hr {
       text-align: left;
 
       &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 3px;
-        background-color: #000000;
-        transition: all .1s ease;
+        background-color: none;
       }
 
       &:hover {
         &::after {
-          width: 100%;
+          width: 0%;
         }
       }
+
     }
   }
 }
