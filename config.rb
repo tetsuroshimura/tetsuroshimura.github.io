@@ -10,9 +10,6 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page "/posts/*", :layout => "article"
 
-# Use relative URLs
-activate :relative_assets
-set :relative_links, true
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
