@@ -144,11 +144,12 @@ hr {
 
         &::after {
           background-color: none;
+          display: none;
         }
 
         &:hover {
           &::after {
-            width: 0%;
+            display: none;
           }
         }
       }
