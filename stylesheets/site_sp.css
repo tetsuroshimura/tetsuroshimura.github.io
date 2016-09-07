@@ -410,7 +410,8 @@ hr {
         display: inline-block;
         position: relative; }
         .worksList ul.worksTitle li a::after {
-          background-color: none; }
+          background-color: none;
+          display: none; }
         .worksList ul.worksTitle li a:hover::after {
           width: 0%; }
 
