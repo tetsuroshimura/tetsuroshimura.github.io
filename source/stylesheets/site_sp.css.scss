@@ -81,7 +81,7 @@ hr {
       text-align: left;
 
       &::after {
-        background-color: none;
+        display: none;
       }
 
       &:hover {

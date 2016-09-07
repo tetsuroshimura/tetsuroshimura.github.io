@@ -175,13 +175,7 @@ hr {
       text-align: left;
 
       &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 3px;
-        transition: all .1s ease;
+        display: none;
       }
 
       &:hover {
