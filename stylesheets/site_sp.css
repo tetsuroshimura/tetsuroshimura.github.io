@@ -413,7 +413,7 @@ hr {
           background-color: none;
           display: none; }
         .worksList ul.worksTitle li a:hover::after {
-          width: 0%; }
+          display: none; }
 
 .profile {
   font-size: 22px;
@@ -433,4 +433,4 @@ hr {
       .profile p a::after {
         display: none; }
       .profile p a:hover::after {
-        width: 0%; }
+        display: none; }
