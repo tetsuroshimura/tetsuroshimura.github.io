@@ -12,51 +12,86 @@ body {
   font-size: 1em;
 }
 
-.logo {
-  width: 60px;
-  margin-top: 100px;
-  margin-left: 50px;
-  float: left;
+.logotext {
   position: fixed;
-}
-hr {
-  border-top: 1px solid;
-  margin-right: 60px;
-  width: 70%;
-  margin: 0 auto;
+  top: 130px;
+  right: -110px;
+  transform:rotate(90deg);
+  font-size: 40px;
+  font-weight: 400;
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    height: 3px;
+    background-color: #000000;
+  }
 }
 
 .worksList {
+  width: 100%;
   ul.worksTitle {
-    overflow: hidden;
-    padding-bottom: 80px;
-    padding-top: 80px;
-    margin: 0 auto;
-    width: 70%;
+    //overflow: hidden;
     li {
       list-style: none;
-      font-size: 60px;
-      line-height: 1.2em;
-      font-weight: 800;
-      transform: scale( 1 , 0.7 );
+      font-size: 40px;
+      line-height: 1.5em;
+      font-weight: 400;
       a {
         text-decoration: none;
         color: #000000;
         display: inline-block;
         position: relative;
+        .scaletext {
+          // transform: scale( 1 , 0.8 );
+          display: block;
+        }
+        .bgimg {
+          display: none;
+        }
 
-        // &::after {
-        //   content: '';
-        //   position: absolute;
-        //   bottom: 0;
-        //   left: 0;
-        //   width: 0;
-        //   height: 5px;
-        //   background-color: #000000;
-        //   transition: all .1s ease;
-        // }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 10px;
+          width: 0;
+          height: 3px;
+          background-color: #000000;
+          transition: all .1s ease;
+          z-index: -2;
+        }
 
         &:hover {
+          .bgimg {
+            display: block;
+            width: 100%;
+            img {
+              width: 70%;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              z-index: 9999;
+            }
+            video {
+              width: 70%;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              z-index: 99999;
+            }
+          }
           &::after {
             width: 100%;
           }
@@ -66,15 +101,13 @@ hr {
   }
 }
 .profile {
-  font-size: 30px;
-  padding-top: 60px;
+  font-size: 40px;
+  padding-top: 30px;
   padding-bottom: 100px;
-  width: 70%;
-  margin: 0 auto;
   p {
     line-height: 1.5em;
-    font-weight: 500;
-    transform: scale( 1 , 0.8 );
+    font-weight: 400;
+    // transform: scale(1 , 0.8);
     a {
       text-decoration: none;
       color: #000000;
@@ -85,7 +118,8 @@ hr {
       &::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
+        right: 0;
         left: 0;
         width: 0;
         height: 3px;

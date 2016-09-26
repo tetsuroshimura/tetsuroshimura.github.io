@@ -56,7 +56,7 @@ hr {
 
         &:hover {
           &::after {
-            width: 0%;
+            display: none;
           }
         }
 
@@ -86,7 +86,7 @@ hr {
 
       &:hover {
         &::after {
-          width: 0%;
+          display: none
         }
       }
 
