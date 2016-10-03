@@ -399,11 +399,11 @@ body {
 
 p.title {
   position: fixed;
-  top: 10px;
+  top: 20px;
   left: 20px;
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.2; }
   p.title a {
     color: #000;
     text-decoration: none; }
@@ -444,7 +444,7 @@ p.title {
 
 .textWrapper {
   width: 88%;
-  padding-top: 40px;
+  padding-top: 30px;
   margin: 0 auto; }
   .textWrapper .worksText {
     font-size: 14px;
@@ -511,7 +511,8 @@ p.title {
       list-style: none;
       font-size: 28px;
       font-weight: 400;
-      line-height: 1.5em; }
+      line-height: 1.2em;
+      margin-bottom: 15px; }
       .worksList ul.worksTitle li a {
         text-decoration: none;
         color: #000000;
