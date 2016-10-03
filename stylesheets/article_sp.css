@@ -372,26 +372,60 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em; }
 
+.logotext {
+  display: none;
+  position: fixed;
+  top: 160px;
+  right: -130px;
+  transform: rotate(90deg);
+  font-size: 50px;
+  font-weight: 400; }
+  .logotext a {
+    text-decoration: none;
+    color: #000000;
+    transition: all .1s ease; }
+    .logotext a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      z-index: -1;
+      background-color: #000000;
+      transition: all .1s ease; }
+    .logotext a:hover::after {
+      width: 100%; }
+
+p.title {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5; }
+  p.title a {
+    color: #000;
+    text-decoration: none; }
+    p.title a span.back {
+      display: none; }
+    p.title a:after {
+      display: none;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background-color: #000000; }
+  p.title:hover a span.maintitle {
+    display: block; }
+  p.title:hover a span.back {
+    display: none; }
+
 .works {
   clear: left;
-  padding-top: 100px; }
-
-.logo {
-  width: 40px;
-  top: -80px;
-  margin-top: 0px;
-  margin-left: 110px;
-  transform: rotate(-90deg);
-  float: none;
-  position: fixed;
-  float: left;
-  position: fixed; }
-
-hr {
-  border-top: 1px solid;
-  margin-right: 60px;
-  width: 90%;
-  margin: 0 auto; }
+  padding-top: 40px; }
 
 .works {
   clear: left; }
@@ -409,17 +443,13 @@ hr {
     text-align: center; }
 
 .textWrapper {
-  width: 90%;
+  width: 88%;
   padding-top: 40px;
   margin: 0 auto; }
-  .textWrapper .title {
-    font-size: 26px;
-    font-weight: 800;
-    transform: scale(1, 0.8); }
   .textWrapper .worksText {
     font-size: 14px;
-    line-height: 2em;
-    padding-top: 40px;
+    line-height: 1.8em;
+    padding-top: 20px;
     letter-spacing: 0.1em;
     transform: scale(1, 1.1);
     text-align: justify; }
@@ -446,6 +476,7 @@ hr {
       overflow: hidden;
       transition: all .1s ease; }
       .LaunchButton .buttonText a::after {
+        display: none;
         content: '';
         position: absolute;
         bottom: 0;
@@ -457,7 +488,7 @@ hr {
         transition: all .1s ease;
         color: #ffffff; }
       .LaunchButton .buttonText a:hover {
-        color: #ffffff; }
+        color: #000000; }
         .LaunchButton .buttonText a:hover::after {
           width: 100%; }
 
@@ -466,7 +497,7 @@ hr {
   clear: left; }
 
 .worksList {
-  padding-top: 100px;
+  padding-top: 80px;
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -479,9 +510,8 @@ hr {
     .worksList ul.worksTitle li {
       list-style: none;
       font-size: 28px;
-      font-weight: 800;
-      line-height: 1.2em;
-      transform: scale(1, 0.7); }
+      font-weight: 400;
+      line-height: 1.5em; }
       .worksList ul.worksTitle li a {
         text-decoration: none;
         color: #000000;
@@ -494,15 +524,14 @@ hr {
           display: none; }
 
 .profile {
-  font-size: 22px;
-  padding-top: 30px;
+  font-size: 28px;
+  padding-top: 0;
   padding-bottom: 50px;
   width: 90%;
   margin: 0 auto; }
   .profile p {
-    line-height: 1.8em;
-    font-weight: 500;
-    transform: scale(1, 0.8); }
+    line-height: 1.5em;
+    font-weight: 400; }
     .profile p a {
       text-decoration: none;
       color: #000000;
