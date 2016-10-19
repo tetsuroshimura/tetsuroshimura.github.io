@@ -382,7 +382,7 @@ body {
   font-size: 50px;
   font-weight: 400;
   color: #000000;
-  letter-spacing: 2px; }
+  letter-spacing: 1px; }
   .logotext a {
     text-decoration: none;
     color: #000000; }
@@ -458,7 +458,7 @@ body {
   .profile p {
     line-height: 1.5em;
     font-weight: 400;
-    letter-spacing: 2px; }
+    letter-spacing: 1px; }
     .profile p a {
       text-decoration: none;
       color: #000000;

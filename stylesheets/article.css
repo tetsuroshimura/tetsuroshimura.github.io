@@ -383,7 +383,7 @@ body {
     text-decoration: none;
     color: #000000;
     transition: all .1s ease;
-    letter-spacing: 2px; }
+    letter-spacing: 1px; }
     .logotext a::after {
       content: '';
       position: absolute;
