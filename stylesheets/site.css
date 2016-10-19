@@ -376,12 +376,13 @@ body {
 
 .logotext {
   position: fixed;
-  top: 180px;
-  right: -110px;
+  top: 190px;
+  right: -90px;
   transform: rotate(90deg);
   font-size: 50px;
   font-weight: 400;
-  color: #000000; }
+  color: #000000;
+  letter-spacing: 2px; }
   .logotext a {
     text-decoration: none;
     color: #000000; }
@@ -395,32 +396,27 @@ body {
     background-color: #000000; }
 
 .worksList {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%; }
   .worksList ul.worksTitle {
-    margin-left: 40px; }
+    margin-left: 60px; }
     .worksList ul.worksTitle li {
       list-style: none;
       font-size: 50px;
       line-height: 1.2em;
       font-weight: 400;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      letter-spacing: 2px; }
       .worksList ul.worksTitle li a {
         text-decoration: none;
         color: #000000;
         display: inline-block;
         position: relative; }
-        .worksList ul.worksTitle li a:visited {
-          content: '';
-          position: absolute;
-          bottom: 10px;
-          width: 0;
-          height: 20px;
-          background-color: #000; }
         .worksList ul.worksTitle li a .scaletext {
           display: block; }
         .worksList ul.worksTitle li a .bgimg {
-          display: none; }
+          display: none;
+          transition: all .5s ease; }
         .worksList ul.worksTitle li a::after {
           content: '';
           position: absolute;
@@ -428,8 +424,7 @@ body {
           width: 0;
           height: 3px;
           background-color: #000;
-          transition: all .1s ease;
-          z-index: -2; }
+          transition: all .1s ease; }
         .worksList ul.worksTitle li a:hover .bgimg {
           display: block;
           width: 100%; }
@@ -441,6 +436,7 @@ body {
             left: 0;
             right: 0;
             margin: auto;
+            opacity: 100;
             z-index: -9999; }
           .worksList ul.worksTitle li a:hover .bgimg video {
             width: 70%;
@@ -455,13 +451,14 @@ body {
           width: 100%; }
 
 .profile {
-  margin-left: 40px;
+  margin-left: 60px;
   font-size: 50px;
   padding-top: 30px;
   padding-bottom: 100px; }
   .profile p {
     line-height: 1.5em;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: 2px; }
     .profile p a {
       text-decoration: none;
       color: #000000;
