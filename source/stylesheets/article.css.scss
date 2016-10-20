@@ -71,26 +71,32 @@ p.title {
   a {
     color: #000;
     text-decoration: none;
-    span.back {
-      display: none;
-    }
-    &:after{
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 3px;
-      background-color: #000000;
+    span {
+      display: block;
+      &.back {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: #000000;
+      }
     }
   }
   &:hover {
     a {
       span.maintitle {
-        display: none;
+        visibility: hidden;
       }
       span.back {
-        display: inline-block;
+        visibility: visible;
       }
     }
   }
