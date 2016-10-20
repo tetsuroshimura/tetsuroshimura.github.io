@@ -422,20 +422,25 @@ p.title {
   p.title a {
     color: #000;
     text-decoration: none; }
-    p.title a span.back {
-      display: none; }
-    p.title a:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 3px;
-      background-color: #000000; }
+    p.title a span {
+      display: block; }
+      p.title a span.back {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      p.title a span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: #000000; }
   p.title:hover a span.maintitle {
-    display: none; }
+    visibility: hidden; }
   p.title:hover a span.back {
-    display: inline-block; }
+    visibility: visible; }
 
 .textWrapper {
   width: 70%;
