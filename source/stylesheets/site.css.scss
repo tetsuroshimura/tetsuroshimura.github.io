@@ -12,6 +12,11 @@ body {
   font-size: 1em;
 }
 
+.body {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
 .logotext {
   position: fixed;
   top: 190px;
@@ -60,6 +65,28 @@ body {
         .bgimg {
           display: none;
           transition: all .5s ease;
+          width: 100%;
+          img {
+            width: 70%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 100;
+            z-index: -9999;
+          }
+          video {
+            width: 70%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: -9999;
+          }
         }
         &::after {
           content: '';
@@ -73,28 +100,6 @@ body {
         &:hover {
           .bgimg {
             display: block;
-            width: 100%;
-            img {
-              width: 70%;
-              position: fixed;
-              top: 0;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              margin: auto;
-              opacity: 100;
-              z-index: -9999;
-            }
-            video {
-              width: 70%;
-              position: fixed;
-              top: 0;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              margin: auto;
-              z-index: -99999;
-            }
           }
           &::after {
             width: 100%;

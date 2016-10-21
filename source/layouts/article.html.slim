@@ -11,9 +11,10 @@ html
 
     = stylesheet_link_tag :article
     = stylesheet_link_tag :article_sp, :media => "only screen and (min-width: 0px) and (max-width: 500px)"
-    = javascript_include_tag :all
 
   body class="= page_classes "
     .body(style="background-color: #{current_page.data.bgColor}")
       == yield
       == partial "partials/footer"
+    / script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+    / = javascript_include_tag :all
