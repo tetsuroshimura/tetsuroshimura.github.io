@@ -400,7 +400,7 @@ body {
     overflow: hidden;
     padding-bottom: 40px;
     margin: 0 auto;
-    width: calc(100%-50px);
+    width: calc(100% - 50px);
     margin-left: 20px;
     padding-right: 30px; }
     .worksList ul.worksTitle li {

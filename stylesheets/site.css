@@ -374,6 +374,10 @@ body {
   font-weight: bold;
   font-size: 1em; }
 
+.body {
+  opacity: 0;
+  transition: opacity .5s ease; }
+
 .logotext {
   position: fixed;
   top: 190px;
@@ -416,19 +420,9 @@ body {
           display: block; }
         .worksList ul.worksTitle li a .bgimg {
           display: none;
-          transition: all .5s ease; }
-        .worksList ul.worksTitle li a::after {
-          content: '';
-          position: absolute;
-          bottom: 0px;
-          width: 0;
-          height: 3px;
-          background-color: #000;
-          transition: all .1s ease; }
-        .worksList ul.worksTitle li a:hover .bgimg {
-          display: block;
+          transition: all .5s ease;
           width: 100%; }
-          .worksList ul.worksTitle li a:hover .bgimg img {
+          .worksList ul.worksTitle li a .bgimg img {
             width: 70%;
             position: fixed;
             top: 0;
@@ -438,7 +432,7 @@ body {
             margin: auto;
             opacity: 100;
             z-index: -9999; }
-          .worksList ul.worksTitle li a:hover .bgimg video {
+          .worksList ul.worksTitle li a .bgimg video {
             width: 70%;
             position: fixed;
             top: 0;
@@ -446,7 +440,17 @@ body {
             left: 0;
             right: 0;
             margin: auto;
-            z-index: -99999; }
+            z-index: -9999; }
+        .worksList ul.worksTitle li a::after {
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          width: 0;
+          height: 3px;
+          background-color: #000;
+          transition: all .1s ease; }
+        .worksList ul.worksTitle li a:hover .bgimg {
+          display: block; }
         .worksList ul.worksTitle li a:hover::after {
           width: 100%; }
 

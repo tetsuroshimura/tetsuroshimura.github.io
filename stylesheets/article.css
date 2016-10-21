@@ -423,12 +423,14 @@ p.title {
     color: #000;
     text-decoration: none; }
     p.title a span {
-      display: block; }
+      display: block;
+      position: relative; }
       p.title a span.back {
         visibility: hidden;
         position: absolute;
         top: 0;
-        left: 0; }
+        left: 0;
+        white-space: nowrap; }
       p.title a span:after {
         content: "";
         position: absolute;
