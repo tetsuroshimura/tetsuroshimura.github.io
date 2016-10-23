@@ -14,16 +14,17 @@ body {
 
 .body {
   opacity: 0;
-  transition: opacity .5s ease;
 }
 
 .logotext {
   position: fixed;
-  top: 240px;
-  right: -140px;
-  transform:rotate(90deg);
+  top: 40px;
+  left: calc(100% - 60px);
+  transform: rotate(90deg);
+  transform-origin: 0 0;
   font-size: 50px;
   font-weight: 400;
+  letter-spacing: 1px;
   color: #000000;
   a {
     text-decoration: none;
