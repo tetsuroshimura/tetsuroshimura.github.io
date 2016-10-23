@@ -373,22 +373,33 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em; }
-
-.body {
-  opacity: 0;
-  transition: opacity .5s ease; }
+  body.loading:before {
+    content: attr(data-loading);
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    font-size: 50px;
+    line-height: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px; }
 
 .logotext {
   position: fixed;
-  top: 240px;
-  right: -140px;
+  top: 50px;
+  left: calc(100% - 50px);
   transform: rotate(90deg);
+  transform-origin: 0 0;
   font-size: 50px;
   font-weight: 400;
+  letter-spacing: 2px;
   color: #000000; }
   .logotext a {
     text-decoration: none;
     color: #000000; }
+
+main {
+  opacity: 0; }
 
 .worksList {
   margin-top: 40px;
@@ -472,17 +483,3 @@ body {
         transition: all .1s ease; }
       .profile p a:hover::after {
         width: 100%; }
-
-.bgsquare {
-  width: 70%;
-  height: 70vh;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border: solid 3px #000;
-  z-index: -9999;
-  display: none; }
