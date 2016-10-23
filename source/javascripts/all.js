@@ -12,5 +12,9 @@ $(function(){
       }
     }, false);
   }
+  // Show contents after 3s count
+  setTimeout(function(){
+    $body.css('opacity', 1);
+  }, 3000);
 
 });
