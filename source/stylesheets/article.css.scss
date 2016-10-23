@@ -16,7 +16,7 @@ body {
   .next {
     position: fixed;
     right: 100px;
-    top: 50%;
+    top: calc(50% - 20px);
     display: block;
     a {
       &:after {
@@ -40,7 +40,7 @@ body {
 .previous {
   position: fixed;
   left: 60px;
-  top: 50%;
+  top: calc(50% - 20px);
 }
 .previous::after {
   content: '';
