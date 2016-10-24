@@ -21,6 +21,12 @@ body {
       line-height: 1.2em;
       font-weight: 400;
       letter-spacing: 2px;
+      @media (max-width: 1080px) {
+        font-size: 40px;
+      }
+      @media (max-width: 920px) {
+        font-size: 32px;
+      }
     }
   }
 }

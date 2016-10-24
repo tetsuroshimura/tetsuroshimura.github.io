@@ -10,7 +10,13 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em;
+  &.loading {
+    &:before {
+      display: none;
+    }
+  }
 }
+
 .logotext {
   position: fixed;
   top: 20px;
@@ -33,6 +39,11 @@ body {
     background-color: #000000;
   }
 }
+
+main {
+  opacity: 1;
+}
+
 .worksList {
   margin-top: 20px;
   ul.worksTitle {
