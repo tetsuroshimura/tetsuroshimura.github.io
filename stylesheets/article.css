@@ -372,47 +372,49 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em; }
 
-.nextWrapper {
+.nextWrapper .next {
+  position: fixed;
+  right: 110px;
+  top: calc(50% - 20px);
+  display: block; }
+  .nextWrapper .next a:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    cursor: pointer; }
+
+.previousWrapper {
   position: relative; }
-  .nextWrapper .next {
+  .previousWrapper .previous {
     position: fixed;
-    right: 100px;
+    left: 70px;
     top: calc(50% - 20px);
     display: block; }
-    .nextWrapper .next a:after {
+    .previousWrapper .previous a:after {
       content: '';
       width: 40px;
       height: 40px;
       border: 0px;
       border-top: solid 3px #000;
       border-right: solid 3px #000;
-      -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
+      -ms-transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
       position: absolute;
       top: 50%;
       left: 0;
-      margin-top: -4px; }
-
-.previous {
-  position: fixed;
-  left: 60px;
-  top: calc(50% - 20px); }
-
-.previous::after {
-  content: '';
-  width: 40px;
-  height: 40px;
-  border: 0px;
-  border-top: solid 3px #000;
-  border-left: solid 3px #000;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -4px; }
+      margin-top: -4px;
+      cursor: pointer; }
 
 .works {
   clear: left; }
