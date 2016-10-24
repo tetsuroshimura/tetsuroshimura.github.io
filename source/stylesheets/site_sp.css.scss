@@ -13,8 +13,8 @@ body {
 }
 .logotext {
   position: fixed;
-  top: 160px;
-  right: -130px;
+  top: 20px;
+  left: calc(100% - 10px);
   transform:rotate(90deg);
   font-size: 50px;
   font-weight: 400;
@@ -39,7 +39,7 @@ body {
     overflow: hidden;
     padding-bottom: 40px;
     margin: 0 auto;
-    width: calc(100% - 50px);
+    width: calc(100% - 90px);
     margin-left: 20px;
     padding-right: 30px;
     li {
