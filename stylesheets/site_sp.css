@@ -373,11 +373,13 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em; }
+  body.loading:before {
+    display: none; }
 
 .logotext {
   position: fixed;
-  top: 160px;
-  right: -130px;
+  top: 20px;
+  left: calc(100% - 10px);
   transform: rotate(90deg);
   font-size: 50px;
   font-weight: 400;
@@ -394,13 +396,16 @@ body {
     height: 3px;
     background-color: #000000; }
 
+main {
+  opacity: 1; }
+
 .worksList {
   margin-top: 20px; }
   .worksList ul.worksTitle {
     overflow: hidden;
     padding-bottom: 40px;
     margin: 0 auto;
-    width: calc(100% - 50px);
+    width: calc(100% - 90px);
     margin-left: 20px;
     padding-right: 30px; }
     .worksList ul.worksTitle li {
