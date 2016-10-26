@@ -2,6 +2,7 @@ $(function(){
   var $video = $('video');
   var $body = $('body');
   var $main = $('#main');
+  var $worksBg = $('#worksBg');
 
   // User Agent
   var agent = navigator.userAgent;
@@ -13,10 +14,7 @@ $(function(){
   if ( isMobile ) {
     $body.removeClass('loading');
     $main.css('opacity', 1);
-    var bgImg = $('.bgimg');
-    for (var i = 0; i < bgImg.length; i++) {
-      bgImg[i].remove();
-    }
+    $('#worksBg').remove();
 
   } else {
     // modify text "Loading..."
@@ -48,6 +46,22 @@ $(function(){
       $main.css('opacity', 1);
       clearInterval(loadingTextFunc);
     }, 3000);
+
+    $('#worksTitle').find('a').each(function(){
+      var bg = $(this).attr('data-id');
+      $(this).hover(function() {
+        $('#'+bg).addClass('show');
+        $worksBg.addClass('on');
+        console.log(bg+ ' in');
+      }, function() {
+        setTimeout(function(){
+          $('#'+bg).removeClass('show');
+        }, 300);
+        $worksBg.removeClass('on');
+        console.log(bg+' out');
+      });
+
+    });
 
   }
 

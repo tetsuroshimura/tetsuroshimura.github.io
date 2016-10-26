@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #fffff;
+  background: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em;
@@ -41,6 +41,8 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
   color: #000000;
+  z-index: 10;
+  will-change: transform;
   a {
     text-decoration: none;
     color: #000000;
@@ -54,8 +56,63 @@ main {
 .worksList {
   margin-top: 40px;
   width: 100%;
+  .worksBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    img,
+    video {
+      display: none;
+      width: 70%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      &.show {
+        display: block;
+      }
+    }
+    &:before,
+    &:after {
+      display: block;
+      content: " ";
+      // opacity: 0.5;
+      position: absolute;
+      top: 50%;
+      margin-top: -50vw;
+      width: 100vw;
+      height: 100vw;
+      z-index: 1;
+      background: rgba(255,255,255,1);
+      transform: scale3d(1,1,1) translate3d(1px,0px,0px) rotate(45deg);
+      transition: all 0.3s cubic-bezier(0.800, -0.005, 0.220, 1.005);
+    }
+    &:before {
+      left: 50%;
+      margin-left: -100vw;
+      transform-origin: 100% 50%;
+    }
+    &:after {
+      right: 50%;
+      margin-right: -100vw;
+      transform-origin: 0% 50%;
+      transform: scale3d(1,1,1) translate3d(0px,0px,0px) rotate(45deg);
+    }
+    &.on {
+      &:before {
+        transform: scale3d(1,1,1) translate3d(-80%,0px,0px) rotate(45deg);
+      }
+      &:after {
+        transform: scale3d(1,1,1) translate3d(80%,0px,0px) rotate(45deg);
+      }
+    }
+  }
   ul.worksTitle {
-    //overflow: hidden;
     margin-left: 60px;
     @media (max-width: 768px) {
       width: calc(100% - 170px);
@@ -81,32 +138,6 @@ main {
         .scaletext {
           display: block;
         }
-        .bgimg {
-          display: none;
-          transition: all .5s ease;
-          width: 100%;
-          img {
-            width: 70%;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            opacity: 100;
-            z-index: -9999;
-          }
-          video {
-            width: 70%;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            z-index: -9999;
-          }
-        }
         &::after {
           content: '';
           position: absolute;
@@ -115,11 +146,9 @@ main {
           height: 3px;
           background-color: #000;
           transition: all .1s ease;
+          will-change: transform;
         }
         &:hover {
-          .bgimg {
-            display: block;
-          }
           &::after {
             width: 100%;
           }
@@ -133,6 +162,8 @@ main {
   font-size: 50px;
   padding-top: 30px;
   padding-bottom: 100px;
+  position: relative;
+  z-index: 10;
   @media (max-width: 1080px) {
     font-size: 40px;
   }
