@@ -2,35 +2,67 @@ $(function(){
   var $video = $('video');
   var $body = $('body');
   var $main = $('#main');
+  var $worksBg = $('#worksBg');
 
-  // modify text "Loading..."
-  var dot = 0;
-  var loadingText = "Loading.";
-  var loadingTextFunc = setInterval(function() {
-    if (loadingText == "Loading..."){
-      loadingText = "Loading";
-    }
-    loadingText = loadingText + ".";
-    $body.attr('data-loading', loadingText);
-  }, 400);
-
-  // Show contents when vedeo can be played
-  var count = 0;
-  for (var i = 0; i < $video.length; i++) {
-    $video[i].addEventListener('canplaythrough', function() {
-      count++;
-      if ( count == $video.length ) {
-        $body.removeClass('loading');
-        $main.css('opacity', 1);
-        clearInterval(loadingTextFunc);
-      }
-    }, false);
+  // User Agent
+  var agent = navigator.userAgent;
+  if ( agent.search("iPad") != -1 || agent.search("iPhone") != -1 || agent.search("Android") != -1 ){
+    var isMobile = true;
   }
-  // Show contents after 3s count
-  setTimeout(function(){
+
+
+  if ( isMobile ) {
     $body.removeClass('loading');
     $main.css('opacity', 1);
-    clearInterval(loadingTextFunc);
-  }, 3000);
+    $('#worksBg').remove();
+
+  } else {
+    // modify text "Loading..."
+    var dot = 0;
+    var loadingText = "Loading.";
+    var loadingTextFunc = setInterval(function() {
+      if (loadingText == "Loading..."){
+        loadingText = "Loading";
+      }
+      loadingText = loadingText + ".";
+      $body.attr('data-loading', loadingText);
+    }, 400);
+
+    // Show contents when vedeo can be played
+    var count = 0;
+    for (var i = 0; i < $video.length; i++) {
+      $video[i].addEventListener('canplaythrough', function() {
+        count++;
+        if ( count == $video.length ) {
+          $body.removeClass('loading');
+          $main.css('opacity', 1);
+          clearInterval(loadingTextFunc);
+        }
+      }, false);
+    }
+    // Show contents after 3s count
+    setTimeout(function(){
+      $body.removeClass('loading');
+      $main.css('opacity', 1);
+      clearInterval(loadingTextFunc);
+    }, 3000);
+
+    $('#worksTitle').find('a').each(function(){
+      var bg = $(this).attr('data-id');
+      $(this).hover(function() {
+        $('#'+bg).addClass('show');
+        $worksBg.addClass('on');
+        console.log(bg+ ' in');
+      }, function() {
+        setTimeout(function(){
+          $('#'+bg).removeClass('show');
+        }, 300);
+        $worksBg.removeClass('on');
+        console.log(bg+' out');
+      });
+
+    });
+
+  }
 
 });
