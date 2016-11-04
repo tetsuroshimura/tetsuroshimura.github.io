@@ -35,23 +35,17 @@ body {
 
 .logotext {
   position: fixed;
-  top: 50px;
-  left: calc(100% - 50px);
-  transform: rotate(90deg);
-  transform-origin: 0 0;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #000000;
+  top: 60px;
+  right: 50px;
+  width: 60px;
+  // transform: rotate(90deg);
+  // transform-origin: 0 0;
   z-index: 10;
   will-change: transform;
   a {
-    text-decoration: none;
-    color: #fff;
     font-weight: 800;
     font-style: italic;
     line-height: 1.2;
-    background-color: #000;
       span.logot {
         padding: 10px　15px;
       }

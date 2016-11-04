@@ -85,12 +85,12 @@ body {
 }
 p.title {
   position: fixed;
-  top: 50px;
+  top: 40px;
   left: 60px;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 800;
   font-style: italic;
-  line-height: 1.2;
+  line-height: 1.5em;
   transform: scale(1,0.7);
   letter-spacing: 2px;
   z-index: 1;
@@ -180,6 +180,27 @@ p.title {
         }
       }
     }
+  }
+}
+.LaunchButtonClose {
+  margin-top: 60px;
+  .buttonText {
+    text-align: center;
+      display: block;
+      position: relative;
+      z-index: 2;
+      font-family:Helvetica;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      width: 400px;
+      height: 80px;
+      border: 1px solid #000000;
+      text-decoration: none;
+      color: #000000;
+      font-size: 24px;
+      line-height: 80px;
+      overflow: hidden;
+      opacity: 0.3;
   }
 }
 .worksWrapper {
