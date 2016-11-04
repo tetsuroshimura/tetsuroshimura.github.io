@@ -65,50 +65,22 @@ main {
     will-change: transform;
     img,
     video {
-      display: none;
       width: 70%;
       position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      &.show {
-        display: block;
-      }
-    }
-    &:before,
-    &:after {
-      display: block;
-      content: " ";
-      // opacity: 0.5;
-      position: absolute;
       top: 50%;
-      margin-top: -50vw;
-      width: 100vw;
-      height: 100vw;
-      z-index: 1;
-      background: rgba(255,255,255,1);
-      transform: scale3d(1,1,1) translate3d(1px,0px,0px) rotate(45deg);
-      transition: all 0.3s cubic-bezier(0.800, -0.005, 0.220, 1.005);
-    }
-    &:before {
       left: 50%;
-      margin-left: -100vw;
-      transform-origin: 100% 50%;
-    }
-    &:after {
-      right: 50%;
-      margin-right: -100vw;
-      transform-origin: 0% 50%;
-      transform: scale3d(1,1,1) translate3d(0px,0px,0px) rotate(45deg);
-    }
-    &.on {
-      &:before {
-        transform: scale3d(1,1,1) translate3d(-80%,0px,0px) rotate(45deg);
+      transform: translateX(-50%) skewY(5deg) translateY(100%);
+      transform-origin: 0 0;
+      transition: all 1000ms cubic-bezier(.19,1,.22,1) 0ms;
+      will-change: transform;
+      &.in {
+        transform: translateX(-50%) skewY(0deg) translateY(-50%);
       }
-      &:after {
-        transform: scale3d(1,1,1) translate3d(80%,0px,0px) rotate(45deg);
+      &.out {
+        transform: translateX(-50%) skewY(-5deg) translateY(-200%);
+      }
+      &.reset {
+        transition: all 0ms;
       }
     }
   }

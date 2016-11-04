@@ -50,15 +50,14 @@ $(function(){
     $('#worksTitle').find('a').each(function(){
       var bg = $(this).attr('data-id');
       $(this).hover(function() {
-        $('#'+bg).addClass('show');
-        $worksBg.addClass('on');
-        console.log(bg+ ' in');
+        $(bg).removeClass('out')
+             .addClass('reset');
+        document.body.offsetHeight;
+        $(bg).removeClass('reset')
+             .addClass('in');
       }, function() {
-        setTimeout(function(){
-          $('#'+bg).removeClass('show');
-        }, 300);
-        $worksBg.removeClass('on');
-        console.log(bg+' out');
+        $(bg).removeClass('in')
+             .addClass('out');
       });
 
     });
