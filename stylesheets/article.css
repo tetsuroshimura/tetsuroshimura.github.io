@@ -432,12 +432,15 @@ body {
 
 p.title {
   position: fixed;
-  top: 40px;
-  left: 60px;
-  font-size: 50px;
-  font-weight: 400;
+  top: 20px;
+  left: 30px;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: italic;
   line-height: 1.2;
-  letter-spacing: 2px; }
+  transform: scale(1, 0.7);
+  letter-spacing: 2px;
+  z-index: 1; }
   p.title a {
     color: #000;
     text-decoration: none; }
@@ -456,7 +459,7 @@ p.title {
         left: 0;
         right: 0;
         bottom: 0;
-        height: 3px;
+        height: 5px;
         background-color: #000000; }
   p.title:hover a span.maintitle {
     visibility: hidden; }
@@ -523,13 +526,14 @@ p.title {
   .worksList ul.worksTitle {
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 80px; }
+    padding-bottom: 50px; }
     .worksList ul.worksTitle li {
       list-style: none;
       font-size: 40px;
-      font-weight: 400;
-      line-height: 1.2em;
-      margin-bottom: 20px;
+      font-weight: 800;
+      font-style: italic;
+      transform: scale(1, 0.7);
+      line-height: 1.5em;
       letter-spacing: 1px; }
       .worksList ul.worksTitle li a {
         text-decoration: none;
@@ -542,7 +546,7 @@ p.title {
           bottom: 0;
           left: 0;
           width: 0;
-          height: 3px;
+          height: 4px;
           background-color: #000000;
           transition: all .1s ease; }
         .worksList ul.worksTitle li a:hover::after {
@@ -554,9 +558,11 @@ p.title {
   width: 70%;
   margin: 0 auto; }
   .profile p {
-    line-height: 1.2em;
-    margin-bottom: 20px;
-    font-weight: 400; }
+    line-height: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+    transform: scale(1, 0.7);
+    line-height: 1.5em; }
     .profile p a {
       text-decoration: none;
       color: #000000;
