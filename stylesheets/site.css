@@ -385,7 +385,9 @@ body {
     line-height: 1.2em;
     font-weight: 800;
     letter-spacing: 2px;
-    transform: scale(1, 0.7); }
+    -webkit-transform: scale(1, 0.7);
+        -ms-transform: scale(1, 0.7);
+            transform: scale(1, 0.7); }
     @media (max-width: 1080px) {
       body.loading:before {
         font-size: 40px; } }
@@ -395,23 +397,15 @@ body {
 
 .logotext {
   position: fixed;
-  top: 50px;
-  left: calc(100% - 50px);
-  transform: rotate(90deg);
-  transform-origin: 0 0;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #000000;
+  top: 60px;
+  right: 50px;
+  width: 60px;
   z-index: 10;
   will-change: transform; }
   .logotext a {
-    text-decoration: none;
-    color: #fff;
     font-weight: 800;
     font-style: italic;
-    line-height: 1.2;
-    background-color: #000; }
+    line-height: 1.2; }
     .logotext a span.logot {
       padding: 10px　15px; }
 
@@ -430,42 +424,33 @@ main {
     will-change: transform; }
     .worksList .worksBg img,
     .worksList .worksBg video {
-      display: none;
       width: 70%;
       position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-      .worksList .worksBg img.show,
-      .worksList .worksBg video.show {
-        display: block; }
-    .worksList .worksBg:before, .worksList .worksBg:after {
-      display: block;
-      content: " ";
-      position: absolute;
       top: 50%;
-      margin-top: -50vw;
-      width: 100vw;
-      height: 100vw;
-      z-index: 1;
-      background: white;
-      transform: scale3d(1, 1, 1) translate3d(1px, 0px, 0px) rotate(45deg);
-      transition: all 0.3s cubic-bezier(0.8, -0.005, 0.22, 1.005); }
-    .worksList .worksBg:before {
       left: 50%;
-      margin-left: -100vw;
-      transform-origin: 100% 50%; }
-    .worksList .worksBg:after {
-      right: 50%;
-      margin-right: -100vw;
-      transform-origin: 0% 50%;
-      transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px) rotate(45deg); }
-    .worksList .worksBg.on:before {
-      transform: scale3d(1, 1, 1) translate3d(-80%, 0px, 0px) rotate(45deg); }
-    .worksList .worksBg.on:after {
-      transform: scale3d(1, 1, 1) translate3d(80%, 0px, 0px) rotate(45deg); }
+      -webkit-transform: translateX(-50%) skewY(5deg) translateY(100%);
+          -ms-transform: translateX(-50%) skewY(5deg) translateY(100%);
+              transform: translateX(-50%) skewY(5deg) translateY(100%);
+      -webkit-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+      transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+      will-change: transform; }
+      .worksList .worksBg img.in,
+      .worksList .worksBg video.in {
+        -webkit-transform: translateX(-50%) skewY(0deg) translateY(-50%);
+            -ms-transform: translateX(-50%) skewY(0deg) translateY(-50%);
+                transform: translateX(-50%) skewY(0deg) translateY(-50%); }
+      .worksList .worksBg img.out,
+      .worksList .worksBg video.out {
+        -webkit-transform: translateX(-50%) skewY(-5deg) translateY(-200%);
+            -ms-transform: translateX(-50%) skewY(-5deg) translateY(-200%);
+                transform: translateX(-50%) skewY(-5deg) translateY(-200%); }
+      .worksList .worksBg img.reset,
+      .worksList .worksBg video.reset {
+        -webkit-transition: all 0ms;
+        transition: all 0ms; }
   .worksList ul.worksTitle {
     margin-left: 60px; }
     @media (max-width: 768px) {
@@ -477,7 +462,9 @@ main {
       line-height: 1.5em;
       font-weight: 800;
       font-style: italic;
-      transform: scale(1, 0.7);
+      -webkit-transform: scale(1, 0.7);
+          -ms-transform: scale(1, 0.7);
+              transform: scale(1, 0.7);
       letter-spacing: 2px; }
       @media (max-width: 1080px) {
         .worksList ul.worksTitle li {
@@ -499,6 +486,7 @@ main {
           width: 0;
           height: 5px;
           background-color: #000;
+          -webkit-transition: all .1s ease;
           transition: all .1s ease;
           will-change: transform; }
         .worksList ul.worksTitle li a:hover::after {
@@ -522,7 +510,9 @@ main {
     letter-spacing: 2px;
     font-weight: 800;
     font-style: italic;
-    transform: scale(1, 0.7);
+    -webkit-transform: scale(1, 0.7);
+        -ms-transform: scale(1, 0.7);
+            transform: scale(1, 0.7);
     letter-spacing: 1px; }
     .profile p a {
       text-decoration: none;
@@ -539,6 +529,7 @@ main {
         width: 0;
         height: 5px;
         background-color: #000000;
+        -webkit-transition: all .1s ease;
         transition: all .1s ease; }
       .profile p a:hover::after {
         width: 100%; }

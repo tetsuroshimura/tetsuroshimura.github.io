@@ -377,12 +377,15 @@ body {
   position: fixed;
   top: 160px;
   right: -130px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   font-size: 50px;
   font-weight: 400; }
   .logotext a {
     text-decoration: none;
     color: #000000;
+    -webkit-transition: all .1s ease;
     transition: all .1s ease; }
     .logotext a::after {
       content: '';
@@ -393,6 +396,7 @@ body {
       height: 3px;
       z-index: -1;
       background-color: #000000;
+      -webkit-transition: all .1s ease;
       transition: all .1s ease; }
     .logotext a:hover::after {
       width: 100%; }
@@ -452,7 +456,9 @@ p.title {
     line-height: 1.8em;
     padding-top: 20px;
     letter-spacing: 0.1em;
-    transform: scale(1, 1.1);
+    -webkit-transform: scale(1, 1.1);
+        -ms-transform: scale(1, 1.1);
+            transform: scale(1, 1.1);
     text-align: justify; }
 
 .LaunchButton {
@@ -475,6 +481,7 @@ p.title {
       font-size: 20px;
       line-height: 80px;
       overflow: hidden;
+      -webkit-transition: all .1s ease;
       transition: all .1s ease; }
       .LaunchButton .buttonText a::after {
         display: none;
@@ -486,6 +493,7 @@ p.title {
         height: 100%;
         z-index: -1;
         background-color: #000000;
+        -webkit-transition: all .1s ease;
         transition: all .1s ease;
         color: #ffffff; }
       .LaunchButton .buttonText a:hover {
