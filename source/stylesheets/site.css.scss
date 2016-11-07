@@ -107,7 +107,7 @@ main {
         color: #000000;
         display: inline-block;
         position: relative;
-        transition: opacity .3s ease;
+        transition: opacity .5s ease;
         will-change: opacity;
         .scaletext {
           display: block;
@@ -132,7 +132,7 @@ main {
     &.hovered {
       li {
         a {
-          opacity: 0.5;
+          opacity: 0;
           &.on {
             opacity: 1;
           }

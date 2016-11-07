@@ -67,6 +67,7 @@ body {
 }
 .works {
   clear: left;
+  margin: 0 auto;
 }
 .worksImg {
   .spimg {
@@ -76,17 +77,17 @@ body {
 
 .worksImg {
   text-align: center;
-  padding-top: 40px;
+  margin-top: 50px;
    img {
      width: 70%;
-     margin-top: 100px;
+     margin-bottom: 100px;
      text-align: center;
    }
 }
 p.title {
-  position: fixed;
-  top: 40px;
-  left: 60px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
   font-size: 50px;
   font-weight: 800;
   font-style: italic;
@@ -94,45 +95,19 @@ p.title {
   transform: scale(1,0.7);
   letter-spacing: 2px;
   z-index: 1;
-  width: calc(100% - 120px);
+  padding-top: 50px;
   a {
     color: #000;
     text-decoration: none;
     span {
       display: block;
       position: relative;
-      &.back {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        white-space: nowrap;
-      }
-      &:after{
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 5px;
-        background-color: #000000;
-      }
-    }
-  }
-  &:hover {
-    a {
-      span.maintitle {
-        visibility: hidden;
-      }
-      span.back {
-        visibility: visible;
-      }
+      // text-align: left;
     }
   }
 }
 .textWrapper {
   width: 70%;
-  padding-top: 80px;
   margin: 0 auto;
   .worksText {
     font-size: 16px;
