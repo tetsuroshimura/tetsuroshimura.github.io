@@ -38,17 +38,12 @@ body {
   top: 60px;
   right: 50px;
   width: 60px;
-  // transform: rotate(90deg);
-  // transform-origin: 0 0;
   z-index: 10;
   will-change: transform;
   a {
-    font-weight: 800;
-    font-style: italic;
-    line-height: 1.2;
-      span.logot {
-        padding: 10px　15px;
-      }
+    img {
+      display: block;
+    }
   }
 }
 
@@ -66,13 +61,14 @@ main {
     width: 100%;
     height: 100%;
     will-change: transform;
+    overflow: hidden;
     img,
     video {
       width: 70%;
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translateX(-50%) skewY(5deg) translateY(100%);
+      transform: translateX(-50%) skewY(5deg) translateY(50vh);
       transform-origin: 0 0;
       transition: all 1000ms cubic-bezier(.19,1,.22,1) 0ms;
       will-change: transform;
@@ -80,7 +76,7 @@ main {
         transform: translateX(-50%) skewY(0deg) translateY(-50%);
       }
       &.out {
-        transform: translateX(-50%) skewY(-5deg) translateY(-200%);
+        transform: translateX(-50%) skewY(-5deg) translateY(calc(-50% - 100vh));
       }
       &.reset {
         transition: all 0ms;
@@ -111,6 +107,8 @@ main {
         color: #000000;
         display: inline-block;
         position: relative;
+        transition: opacity .3s ease;
+        will-change: opacity;
         .scaletext {
           display: block;
         }
@@ -127,6 +125,16 @@ main {
         &:hover {
           &::after {
             width: 100%;
+          }
+        }
+      }
+    }
+    &.hovered {
+      li {
+        a {
+          opacity: 0.5;
+          &.on {
+            opacity: 1;
           }
         }
       }

@@ -20,23 +20,9 @@ body {
 .logotext {
   position: fixed;
   top: 20px;
-  left: calc(100% - 10px);
-  transform:rotate(90deg);
-  font-size: 50px;
-  font-weight: 400;
-  color: #000000;
+  right: 20px;
+  width: 50px;
   a {
-    text-decoration: none;
-    color: #000000;
-  }
-  &:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    height: 3px;
-    background-color: #000000;
   }
 }
 
@@ -92,6 +78,7 @@ main {
   p {
     line-height: 1.2em;
     font-weight: 400;
+    letter-spacing: normal;
     margin-bottom: 15px;
     a {
       text-decoration: none;

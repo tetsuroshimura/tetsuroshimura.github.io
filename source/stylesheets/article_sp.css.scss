@@ -11,6 +11,13 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
+
+
+.nextWrapper,
+.previousWrapper {
+  display: none;
+}
+
 .logotext {
   display: none;
   position: fixed;
@@ -55,21 +62,14 @@ p.title {
     span.back {
       display: none;
     }
-    &:after{
+    span:after{
       display: none;
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 3px;
-      background-color: #000000;
     }
   }
   &:hover {
     a {
       span.maintitle {
-        display: block;
+        visibility: visible;
       }
       span.back {
         display: none;
@@ -158,6 +158,13 @@ p.title {
     }
   }
 }
+.LaunchButtonClose {
+  .buttonText {
+    width: 100%;
+  }
+}
+
+
 .worksWrapper {
   text-align: center;
   clear: left;
