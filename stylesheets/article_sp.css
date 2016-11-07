@@ -372,6 +372,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em; }
 
+.nextWrapper,
+.previousWrapper {
+  display: none; }
+
 .logotext {
   display: none;
   position: fixed;
@@ -402,35 +406,29 @@ body {
       width: 100%; }
 
 p.title {
-  position: fixed;
+  position: relative;
   top: 20px;
   left: 20px;
-  margin-right: 20px;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.2; }
+  font-size: 26px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.4;
+  width: calc(100% - 20px);
+  letter-spacing: 1px; }
   p.title a {
     color: #000;
     text-decoration: none; }
     p.title a span.back {
       display: none; }
-    p.title a:after {
-      display: none;
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 3px;
-      background-color: #000000; }
+    p.title a span:after {
+      display: none; }
   p.title:hover a span.maintitle {
-    display: block; }
+    visibility: visible; }
   p.title:hover a span.back {
     display: none; }
 
 .works {
-  clear: left;
-  padding-top: 40px; }
+  clear: left; }
 
 .works {
   clear: left; }
@@ -501,6 +499,9 @@ p.title {
         .LaunchButton .buttonText a:hover::after {
           width: 100%; }
 
+.LaunchButtonClose .buttonText {
+  width: 100%; }
+
 .worksWrapper {
   text-align: center;
   clear: left; }
@@ -518,10 +519,10 @@ p.title {
     width: 100%; }
     .worksList ul.worksTitle li {
       list-style: none;
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 1.2em;
-      margin-bottom: 15px; }
+      font-size: 26px;
+      font-weight: 800;
+      font-style: italic;
+      line-height: 1.4em; }
       .worksList ul.worksTitle li a {
         text-decoration: none;
         color: #000000;

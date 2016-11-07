@@ -417,23 +417,24 @@ body {
       cursor: pointer; }
 
 .works {
-  clear: left; }
+  clear: left;
+  margin: 0 auto; }
 
 .worksImg .spimg {
   display: none; }
 
 .worksImg {
   text-align: center;
-  padding-top: 40px; }
+  margin-top: 50px; }
   .worksImg img {
     width: 70%;
-    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center; }
 
 p.title {
-  position: fixed;
-  top: 40px;
-  left: 60px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
   font-size: 50px;
   font-weight: 800;
   font-style: italic;
@@ -442,35 +443,17 @@ p.title {
       -ms-transform: scale(1, 0.7);
           transform: scale(1, 0.7);
   letter-spacing: 2px;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 50px; }
   p.title a {
     color: #000;
     text-decoration: none; }
     p.title a span {
       display: block;
       position: relative; }
-      p.title a span.back {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        white-space: nowrap; }
-      p.title a span:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 5px;
-        background-color: #000000; }
-  p.title:hover a span.maintitle {
-    visibility: hidden; }
-  p.title:hover a span.back {
-    visibility: visible; }
 
 .textWrapper {
   width: 70%;
-  padding-top: 80px;
   margin: 0 auto; }
   .textWrapper .worksText {
     font-size: 16px;
