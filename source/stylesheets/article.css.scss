@@ -94,6 +94,7 @@ p.title {
   transform: scale(1,0.7);
   letter-spacing: 2px;
   z-index: 1;
+  width: calc(100% - 120px);
   a {
     color: #000;
     text-decoration: none;

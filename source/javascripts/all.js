@@ -3,6 +3,7 @@ $(function(){
   var $body = $('body');
   var $main = $('#main');
   var $worksBg = $('#worksBg');
+  var $worksTitle = $('#worksTitle');
 
   // User Agent
   var agent = navigator.userAgent;
@@ -14,7 +15,7 @@ $(function(){
   if ( isMobile ) {
     $body.removeClass('loading');
     $main.css('opacity', 1);
-    $('#worksBg').remove();
+    $worksBg.remove();
 
   } else {
     // modify text "Loading..."
@@ -47,17 +48,24 @@ $(function(){
       clearInterval(loadingTextFunc);
     }, 3000);
 
-    $('#worksTitle').find('a').each(function(){
-      var bg = $(this).attr('data-id');
-      $(this).hover(function() {
+
+    var $titles = [];
+    $worksTitle.find('a').each(function(i){
+      $titles[i] = $(this);
+      var bg = $titles[i].attr('data-id');
+      $titles[i].hover(function() {
         $(bg).removeClass('out')
              .addClass('reset');
         document.body.offsetHeight;
         $(bg).removeClass('reset')
              .addClass('in');
+        $worksTitle.addClass('hovered');
+        $titles[i].addClass('on');
       }, function() {
         $(bg).removeClass('in')
              .addClass('out');
+        $worksTitle.removeClass('hovered');
+        $titles[i].removeClass('on');
       });
 
     });
