@@ -11,30 +11,51 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
+p.index {
+  position: fixed;
+  left: 40px;
+  top: 30px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  font-size: 20px;
+  letter-spacing: 2px;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+p.shianbrown {
+  position: fixed;
+  right: -90px;
+  top: 30px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  font-size: 20px;
+  letter-spacing: 2px;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
 .nextWrapper {
-  // position: relative;
   .next {
     position: fixed;
-    right: 110px;
+    right: 10px;
     top: calc(50% - 20px);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    font-size: 20px;
+    letter-spacing: 2px;
     display: block;
     a {
-      &:after {
-        content: '';
-        width: 40px;
-        height: 40px;
-        border: 0px;
-        border-top: solid 3px #000;
-        border-right: solid 3px #000;
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        position: absolute;
-        top: 50%;
-        left: 0;
-        margin-top: -4px;
-        cursor: pointer;
-      }
+      text-decoration: none;
+      color: #000;
     }
   }
 }
@@ -42,26 +63,18 @@ body {
   position: relative;
   .previous {
     position: fixed;
-    left: 70px;
+    left: 40px;
     top: calc(50% - 20px);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    font-size: 20px;
+    letter-spacing: 2px;
     display: block;
     a {
-      &:after {
-        content: '';
-        width: 40px;
-        height: 40px;
-        border: 0px;
-        border-top: solid 3px #000;
-        border-right: solid 3px #000;
-        -ms-transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-        transform: rotate(-135deg);
-        position: absolute;
-        top: 50%;
-        left: 0;
-        margin-top: -4px;
-        cursor: pointer;
-      }
+      text-decoration: none;
+      color: #000;
     }
   }
 }
