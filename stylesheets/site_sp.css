@@ -224,7 +224,7 @@ textarea {
   /* 2 */ }
 
 /**
- * Restore the font weight unset by the previous rule.
+ * Restore the font weight unset by the PREV rule.
  */
 optgroup {
   font-weight: bold; }
@@ -270,7 +270,7 @@ button::-moz-focus-inner,
   padding: 0; }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restore the focus styles unset by the PREV rule.
  */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,

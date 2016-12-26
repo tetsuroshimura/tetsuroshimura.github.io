@@ -224,7 +224,7 @@ textarea {
   /* 2 */ }
 
 /**
- * Restore the font weight unset by the previous rule.
+ * Restore the font weight unset by the PREV rule.
  */
 optgroup {
   font-weight: bold; }
@@ -270,7 +270,7 @@ button::-moz-focus-inner,
   padding: 0; }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restore the focus styles unset by the PREV rule.
  */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
@@ -372,49 +372,90 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em; }
 
+p.index {
+  position: fixed;
+  left: 40px;
+  top: 30px;
+  font-weight: 800;
+  font-style: italic;
+  -webkit-transform: scale(1, 0.7);
+      -ms-transform: scale(1, 0.7);
+          transform: scale(1, 0.7);
+  letter-spacing: 2px;
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+  font-size: 30px;
+  letter-spacing: 2px; }
+  p.index a {
+    text-decoration: none;
+    color: #000; }
+
 .nextWrapper .next {
   position: fixed;
-  right: 110px;
-  top: calc(50% - 20px);
+  font-weight: 800;
+  font-style: italic;
+  -webkit-transform: scale(1, 0.7);
+      -ms-transform: scale(1, 0.7);
+          transform: scale(1, 0.7);
+  letter-spacing: 2px;
+  right: 50px;
+  top: calc(50% - 30px);
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+  font-size: 30px;
+  letter-spacing: 2px;
   display: block; }
-  .nextWrapper .next a:after {
-    content: '';
-    width: 40px;
-    height: 40px;
-    border: 0px;
-    border-top: solid 3px #000;
-    border-right: solid 3px #000;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -4px;
-    cursor: pointer; }
-
-.previousWrapper {
-  position: relative; }
-  .previousWrapper .previous {
-    position: fixed;
-    left: 70px;
-    top: calc(50% - 20px);
-    display: block; }
-    .previousWrapper .previous a:after {
+  .nextWrapper .next a {
+    text-decoration: none;
+    color: #000; }
+    .nextWrapper .next a::after {
       content: '';
-      width: 40px;
-      height: 40px;
-      border: 0px;
-      border-top: solid 3px #000;
-      border-right: solid 3px #000;
-      -ms-transform: rotate(-135deg);
-      -webkit-transform: rotate(-135deg);
-      transform: rotate(-135deg);
       position: absolute;
-      top: 50%;
+      bottom: 0;
       left: 0;
-      margin-top: -4px;
-      cursor: pointer; }
+      width: 0;
+      height: 4px;
+      background-color: #000000;
+      -webkit-transition: all .1s ease;
+      transition: all .1s ease; }
+    .nextWrapper .next a:hover::after {
+      width: 100%; }
+
+.PREVWrapper {
+  position: relative; }
+  .PREVWrapper .PREV {
+    position: fixed;
+    font-weight: 800;
+    font-style: italic;
+    -webkit-transform: scale(1, 0.7);
+        -ms-transform: scale(1, 0.7);
+            transform: scale(1, 0.7);
+    letter-spacing: 2px;
+    left: 50px;
+    top: calc(50% - 30px);
+    -webkit-transform-origin: left bottom;
+        -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: block; }
+    .PREVWrapper .PREV a {
+      text-decoration: none;
+      color: #000; }
+      .PREVWrapper .PREV a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: #000000;
+        -webkit-transition: all .1s ease;
+        transition: all .1s ease; }
+      .PREVWrapper .PREV a:hover::after {
+        width: 100%; }
 
 .works {
   clear: left;
@@ -425,36 +466,32 @@ body {
 
 .worksImg {
   text-align: center;
-  margin-top: 50px; }
+  padding-top: 120px; }
   .worksImg img {
-    width: 70%;
-    margin-bottom: 100px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    text-align: center; }
+  .worksImg video {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 140px;
     text-align: center; }
 
-p.title {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  font-size: 50px;
-  font-weight: 800;
-  font-style: italic;
-  line-height: 1.5em;
-  -webkit-transform: scale(1, 0.7);
-      -ms-transform: scale(1, 0.7);
-          transform: scale(1, 0.7);
-  letter-spacing: 2px;
-  z-index: 1;
-  padding-top: 50px; }
-  p.title a {
-    color: #000;
-    text-decoration: none; }
-    p.title a span {
-      display: block;
-      position: relative; }
-
 .textWrapper {
-  width: 70%;
+  width: 60%;
   margin: 0 auto; }
+  .textWrapper p.title {
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    -webkit-transform: scale(1, 0.7);
+        -ms-transform: scale(1, 0.7);
+            transform: scale(1, 0.7);
+    letter-spacing: 2px;
+    padding-bottom: 50px; }
   .textWrapper .worksText {
     font-size: 16px;
     line-height: 2em;
@@ -531,10 +568,10 @@ p.title {
   display: block;
   margin: 0 auto;
   text-align: left;
-  width: 70%; }
+  width: 60%; }
   .worksList ul.worksTitle {
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 140px;
     padding-bottom: 50px; }
     .worksList ul.worksTitle li {
       list-style: none;
@@ -567,7 +604,7 @@ p.title {
 .profile {
   font-size: 40px;
   padding-bottom: 100px;
-  width: 70%;
+  width: 60%;
   margin: 0 auto; }
   .profile p {
     line-height: 1.5em;
@@ -576,7 +613,7 @@ p.title {
     -webkit-transform: scale(1, 0.7);
         -ms-transform: scale(1, 0.7);
             transform: scale(1, 0.7);
-    line-height: 1.5em; }
+    letter-spacing: 2px; }
     .profile p a {
       text-decoration: none;
       color: #000000;
@@ -586,10 +623,10 @@ p.title {
       .profile p a::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 5px;
         left: 0;
         width: 0;
-        height: 3px;
+        height: 4px;
         background-color: #000000;
         -webkit-transition: all .1s ease;
         transition: all .1s ease; }

@@ -224,7 +224,7 @@ textarea {
   /* 2 */ }
 
 /**
- * Restore the font weight unset by the previous rule.
+ * Restore the font weight unset by the PREV rule.
  */
 optgroup {
   font-weight: bold; }
@@ -270,7 +270,7 @@ button::-moz-focus-inner,
   padding: 0; }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restore the focus styles unset by the PREV rule.
  */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
@@ -420,7 +420,7 @@ main {
     overflow: hidden; }
     .worksList .worksBg img,
     .worksList .worksBg video {
-      width: 70%;
+      width: 60%;
       position: fixed;
       top: 50%;
       left: 50%;
@@ -497,7 +497,7 @@ main {
 
 .profile {
   margin-left: 60px;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 30px;
   padding-bottom: 100px;
   position: relative;
@@ -509,14 +509,13 @@ main {
     .profile {
       font-size: 32px; } }
   .profile p {
-    line-height: 1.8em;
-    letter-spacing: 2px;
+    line-height: 2.2em;
     font-weight: 800;
     font-style: italic;
     -webkit-transform: scale(1, 0.7);
         -ms-transform: scale(1, 0.7);
             transform: scale(1, 0.7);
-    letter-spacing: 1px; }
+    letter-spacing: 2px; }
     .profile p a {
       text-decoration: none;
       color: #000000;
@@ -530,7 +529,7 @@ main {
         right: 0;
         left: 0;
         width: 0;
-        height: 5px;
+        height: 4px;
         background-color: #000000;
         -webkit-transition: all .1s ease;
         transition: all .1s ease; }
