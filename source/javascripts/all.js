@@ -46,7 +46,7 @@ $(function(){
       $body.removeClass('loading');
       $main.css('opacity', 1);
       clearInterval(loadingTextFunc);
-    }, 3000);
+    }, 1000);
 
 
     var $titles = [];
