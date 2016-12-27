@@ -16,10 +16,10 @@ p.index {
   margin-left: 20px;
   left: 0;
   top: 20px;
-  font-weight: 800;
-  font-style: italic;
-  transform: scale(1,0.7);
-  letter-spacing: 2px;
+  font-weight: 500;
+  font-style: normal;
+  transform: scale(1,1);
+  letter-spacing: 1px;
   font-size: 24px;
   letter-spacing: 2px;
   a {
@@ -42,7 +42,7 @@ p.index {
 }
 
 .worksImg {
-  padding-top: 60px;
+  padding-top: 120px;
   .spimg {
     display: block;
   }
@@ -67,16 +67,17 @@ p.index {
   width: 88%;
   margin: 0 auto;
   p.title {
-    font-size: 26px;
-    font-weight: 800;
-    font-style: italic;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
     line-height: 1.4;
     letter-spacing: 1px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
+    transform: scale(1,1);
   }
   .worksText {
     font-size: 14px;
-    line-height: 2em;
+    line-height: 1.8em;
     padding-top: 0;
     letter-spacing: 0.1em;
     transform: scale( 1 , 1.1 );
@@ -84,7 +85,7 @@ p.index {
   }
 }
 .LaunchButton {
-  margin-top: 100px;
+  margin-top: 80px;
   .buttonText {
     text-align: center;
     a {
@@ -127,7 +128,7 @@ p.index {
   }
 }
 .LaunchButtonClose {
-  margin-top: 100px;
+  margin-top: 80px;
   .buttonText {
     width: 100%;
   }
@@ -151,10 +152,12 @@ p.index {
     width: 100%;
     li {
       list-style: none;
-      font-size: 26px;
-      font-weight: 800;
-      font-style: italic;
+      font-size: 24px;
+      font-weight: 500;
+      font-style: normal;
+      transform: scale(1,1);
       line-height: 1.4em;
+      margin-bottom: 15px;
       a {
         text-decoration: none;
         color: #000000;
@@ -184,10 +187,11 @@ p.index {
   margin: 0 auto;
   p {
     list-style: none;
-    font-size: 26px;
-    font-weight: 800;
-    font-style: italic;
-    line-height: 1.4em;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 2em;
+    transform: scale(1,1);
     a {
       text-decoration: none;
       color: #000000;
