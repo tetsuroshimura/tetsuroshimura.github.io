@@ -500,6 +500,8 @@ p.index {
         -ms-transform: scale(1, 1.1);
             transform: scale(1, 1.1);
     text-align: justify; }
+    .textWrapper .worksText a {
+      color: #000; }
 
 .LaunchButton {
   margin-top: 60px; }

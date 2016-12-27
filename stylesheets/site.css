@@ -404,6 +404,9 @@ body {
   .logotext a img {
     display: block; }
 
+.logotextsp {
+  display: none; }
+
 main {
   opacity: 0; }
 
