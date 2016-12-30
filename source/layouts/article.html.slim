@@ -13,6 +13,17 @@ html
     = stylesheet_link_tag :article
     = stylesheet_link_tag :article_sp, :media => "only screen and (min-width: 0px) and (max-width: 500px)"
 
+    meta property="og:title" content="#{article_title} | SHIANBROWN"
+    meta property="og:type" content="article"
+    meta property="og:url" content="http://shianbrown.jp"
+    meta property="og:image" content="http://shianbrown.jp/images/shainbrown_ogp.jpg"
+    meta property="og:site_name" content="SHIANBROWN"
+    meta property="og:description" content="Design Portfolio"
+
+    meta property="fb:app_id" content="827655930709274"
+
+    meta name="twitter:card" content="summarylargeimage"
+
   body
     .body(style="background-color: #{current_page.data.bgColor}")
       == partial "partials/header"
