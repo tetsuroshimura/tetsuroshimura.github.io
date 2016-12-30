@@ -373,21 +373,22 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em; }
-  body.loading:before {
-    display: none; }
 
 .logotext {
-  display: none; }
-
-.logotextsp {
-  display: block;
   position: relative;
   top: 30px;
   left: 20px;
-  width: 240px; }
+  right: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
+  .logotext a, .logotext img {
+    width: 240px;
+    height: auto; }
 
-main {
-  opacity: 1; }
+.loading .logotext {
+  position: fixed;
+  margin: -20.5px 0 0 -120px; }
 
 .worksList {
   margin-top: 150px; }
