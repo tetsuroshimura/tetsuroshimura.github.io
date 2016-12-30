@@ -29,7 +29,7 @@ $(function(){
       $body.attr('data-loading', loadingText);
     }, 400);
 
-    // Show contents when vedeo can be played
+    // Show contents when video can be played
     var count = 0;
     for (var i = 0; i < $video.length; i++) {
       $video[i].addEventListener('canplaythrough', function() {
@@ -46,7 +46,7 @@ $(function(){
       $body.removeClass('loading');
       $main.css('opacity', 1);
       clearInterval(loadingTextFunc);
-    }, 5000);
+    }, 1000);
 
 
     var $titles = [];

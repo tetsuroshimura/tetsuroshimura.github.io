@@ -15,6 +15,7 @@ html
 
   body class="= page_classes "
     .body(style="background-color: #{current_page.data.bgColor}")
+      == partial "partials/header"
       == yield
       == partial "partials/footer"
     / script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"

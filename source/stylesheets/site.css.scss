@@ -46,6 +46,9 @@ body {
     }
   }
 }
+.logotextsp {
+  display: none;
+}
 
 main {
   opacity: 0;
@@ -64,7 +67,7 @@ main {
     overflow: hidden;
     img,
     video {
-      width: 70%;
+      width: 60%;
       position: fixed;
       top: 50%;
       left: 50%;
@@ -107,7 +110,7 @@ main {
         color: #000000;
         display: inline-block;
         position: relative;
-        transition: opacity .3s ease;
+        transition: opacity .5s ease;
         will-change: opacity;
         .scaletext {
           display: block;
@@ -132,7 +135,7 @@ main {
     &.hovered {
       li {
         a {
-          opacity: 0.5;
+          opacity: 0;
           &.on {
             opacity: 1;
           }
@@ -143,7 +146,7 @@ main {
 }
 .profile {
   margin-left: 60px;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 30px;
   padding-bottom: 100px;
   position: relative;
@@ -155,13 +158,11 @@ main {
     font-size: 32px;
   }
   p {
-    line-height: 1.8em;
-    letter-spacing: 2px;
+    line-height: 2.2em;
     font-weight: 800;
     font-style: italic;
     transform: scale(1,0.7);
-    letter-spacing: 1px;
-    // transform: scale(1 , 0.8);
+    letter-spacing: 2px;
     a {
       text-decoration: none;
       color: #000000;
@@ -176,7 +177,7 @@ main {
         right: 0;
         left: 0;
         width: 0;
-        height: 5px;
+        height: 4px;
         background-color: #000000;
         transition: all .1s ease;
       }
@@ -189,20 +190,3 @@ main {
     }
   }
 }
-
-// .bgsquare {
-//   width: 70%;
-//   height: 70vh;
-//   margin: 0 auto;
-//   position: fixed;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   border: solid 3px #000;
-//   z-index: -9999;
-//   display: none;
-// }
-
-
