@@ -10,25 +10,26 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em;
-  &.loading {
-    &:before {
-      display: none;
-    }
-  }
 }
+
 .logotext {
-  display: none;
-}
-.logotextsp {
-  display: block;
   position: relative;
   top: 30px;
   left: 20px;
-  width: 240px;
+  right: auto;
+  transform: none;
+
+  a, img {
+    width: 240px;
+    height: auto;
+  }
 }
 
-main {
-  opacity: 1;
+.loading {
+  .logotext {
+    position: fixed;
+    margin: (-41px / 2) 0 0 (-240px / 2);
+  }
 }
 
 .worksList {
