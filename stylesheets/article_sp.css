@@ -384,11 +384,11 @@ p.index {
   margin-left: 20px;
   left: 0;
   top: 20px;
-  font-family: 'Druk Wide Web', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 2px; }
   p.index a {
     text-decoration: none;
@@ -426,9 +426,9 @@ p.index {
   width: 88%;
   margin: 0 auto; }
   .textWrapper p.title {
-    font-family: 'Druk Wide Web', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 800;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     font-style: normal;
     line-height: 1.4;
     letter-spacing: 1px;
@@ -504,9 +504,9 @@ p.index {
     padding-bottom: 20px;
     width: 100%; }
     .worksList ul.worksTitle li {
-      font-family: 'Druk Wide Web', Helvetica, Arial, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
       list-style: none;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 500;
       font-style: normal;
       line-height: 1.5em;

@@ -406,9 +406,9 @@ body {
     margin-left: 20px;
     width: calc(100% - 40px); }
     .worksList ul.worksTitle li {
-      font-family: 'Druk Wide Web';
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       list-style: none;
-      font-size: 16px;
+      font-size: 20px;
       letter-spacing: 1px;
       line-height: 1.4em;
       font-weight: 500;
