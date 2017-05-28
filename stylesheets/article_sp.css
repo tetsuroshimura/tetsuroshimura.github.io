@@ -426,7 +426,7 @@ p.index {
   width: 88%;
   margin: 0 auto; }
   .textWrapper p.title {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 800;
     font-style: normal;
@@ -504,7 +504,7 @@ p.index {
     padding-bottom: 20px;
     width: 100%; }
     .worksList ul.worksTitle li {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       list-style: none;
       font-size: 20px;
       font-weight: 500;
