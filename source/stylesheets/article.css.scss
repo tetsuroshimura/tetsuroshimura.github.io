@@ -7,6 +7,17 @@ $bgc: bgColor;
   margin: 0; padding: 0;
 }
 
+@font-face {
+  font-family: 'Druk Wide Web';
+  src: url('/fonts/DrukWide-HeavyItalic-Web.eot');
+  src: url('/fonts/DrukWide-HeavyItalic-Web.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/DrukWide-HeavyItalic-Web.woff2') format('woff2'),
+  url('/fonts/DrukWide-HeavyItalic-Web.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -15,12 +26,12 @@ p.index {
   position: fixed;
   left: 40px;
   top: 30px;
+  font-family: 'Druk Wide Web';
   font-weight: 800;
   font-style: italic;
-  transform: scale(1,0.7);
   letter-spacing: 2px;
   transform-origin: left bottom;
-  font-size: 30px;
+  font-size: 18px;
   letter-spacing: 2px;
   a {
     text-decoration: none;
@@ -30,33 +41,22 @@ p.index {
 .nextWrapper {
   .next {
     position: fixed;
-    font-weight: 800;
-    font-style: italic;
-    transform: scale(1,0.7);
-    letter-spacing: 2px;
-    right: 50px;
-    top: calc(50% - 30px);
-    transform-origin: left bottom;
-    font-size: 30px;
-    letter-spacing: 2px;
+    right: 40px;
+    top: calc(50% - 10px);
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
     display: block;
     a {
-      text-decoration: none;
       color: #000;
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 4px;
-        background-color: #000000;
-        transition: all .1s ease;
-      }
+      display: block;
+      height: 30px;
       &:hover {
-        &::after {
-          width: 100%;
-        }
+        border-radius: 10px;
+        height: 20px;
+        width: 20px;
+        background-color: #00BF8A;
       }
     }
   }
@@ -66,32 +66,22 @@ p.index {
   .PREV {
     position: fixed;
     font-weight: 800;
-    font-style: italic;
-    transform: scale(1,0.7);
-    letter-spacing: 2px;
     left: 50px;
-    top: calc(50% - 30px);
-    transform-origin: left bottom;
-    font-size: 30px;
-    letter-spacing: 2px;
+    top: calc(50% - 10px);
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #000;
     display: block;
     a {
-      text-decoration: none;
       color: #000;
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 4px;
-        background-color: #000000;
-        transition: all .1s ease;
-      }
+      display: block;
+      height: 30px;
       &:hover {
-        &::after {
-          width: 100%;
-        }
+        border-radius: 10px;
+        height: 20px;
+        width: 20px;
+        background-color: #00BF8A;
       }
     }
   }
@@ -128,10 +118,10 @@ p.index {
   width: 60%;
   margin: 0 auto;
   p.title {
-    font-size: 40px;
+    font-family: 'Druk Wide Web';
+    font-size: 28px;
     font-weight: 800;
     font-style: italic;
-    transform: scale(1,0.7);
     letter-spacing: 2px;
     padding-bottom: 50px;
   }
@@ -224,14 +214,13 @@ p.index {
     padding-top: 140px;
     padding-bottom: 50px;
     li {
+      font-family: 'Druk Wide Web';
       list-style: none;
-      font-size: 40px;
+      font-size: 28px;
       font-weight: 800;
       font-style: italic;
-      transform: scale(1,0.7);
-      line-height: 1.5em;
-      letter-spacing: 1px;
-      // transform: scale( 1 , 0.7 );
+      line-height: 2em;
+      letter-spacing: 2px;
       a {
         text-decoration: none;
         color: #000000;
@@ -259,15 +248,13 @@ p.index {
 }
 
 .profile {
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 100px;
   width: 60%;
   margin: 0 auto;
   p {
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-weight: 800;
-    font-style: italic;
-    transform: scale(1,0.7);
     letter-spacing: 2px;
     a {
       text-decoration: none;
