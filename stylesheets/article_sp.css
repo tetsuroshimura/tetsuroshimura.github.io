@@ -368,6 +368,13 @@ textarea {
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: 'Druk Wide Web';
+  src: url("/fonts/DrukWide-HeavyItalic-Web.eot");
+  src: url("/fonts/DrukWide-HeavyItalic-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/DrukWide-HeavyItalic-Web.woff2") format("woff2"), url("/fonts/DrukWide-HeavyItalic-Web.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal; }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em; }
@@ -377,13 +384,11 @@ p.index {
   margin-left: 20px;
   left: 0;
   top: 20px;
-  font-weight: 500;
+  font-family: 'Druk Wide Web', Helvetica, Arial, sans-serif;
+  font-weight: 800;
   font-style: normal;
-  -webkit-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-          transform: scale(1, 1);
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: 2px; }
   p.index a {
     text-decoration: none;
@@ -421,15 +426,13 @@ p.index {
   width: 88%;
   margin: 0 auto; }
   .textWrapper p.title {
-    font-size: 24px;
-    font-weight: 500;
+    font-family: 'Druk Wide Web', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
     font-style: normal;
     line-height: 1.4;
     letter-spacing: 1px;
-    padding-bottom: 50px;
-    -webkit-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-            transform: scale(1, 1); }
+    padding-bottom: 50px; }
   .textWrapper .worksText {
     font-size: 14px;
     line-height: 1.8em;
@@ -498,17 +501,15 @@ p.index {
   .worksList ul.worksTitle {
     overflow: hidden;
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     width: 100%; }
     .worksList ul.worksTitle li {
+      font-family: 'Druk Wide Web', Helvetica, Arial, sans-serif;
       list-style: none;
-      font-size: 24px;
+      font-size: 16px;
       font-weight: 500;
       font-style: normal;
-      -webkit-transform: scale(1, 1);
-          -ms-transform: scale(1, 1);
-              transform: scale(1, 1);
-      line-height: 1.4em;
+      line-height: 1.5em;
       margin-bottom: 15px; }
       .worksList ul.worksTitle li a {
         text-decoration: none;
