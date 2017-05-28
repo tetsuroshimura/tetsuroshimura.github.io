@@ -384,7 +384,7 @@ p.index {
   margin-left: 20px;
   left: 0;
   top: 20px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
@@ -428,7 +428,7 @@ p.index {
   .textWrapper p.title {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
     font-style: normal;
     line-height: 1.4;
     letter-spacing: 1px;
