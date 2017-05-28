@@ -368,9 +368,16 @@ textarea {
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: 'Druk Wide Web';
+  src: url("/fonts/DrukWide-HeavyItalic-Web.eot");
+  src: url("/fonts/DrukWide-HeavyItalic-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/DrukWide-HeavyItalic-Web.woff2") format("woff2"), url("/fonts/DrukWide-HeavyItalic-Web.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal; }
 body {
   background: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Druk Wide Web',"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1em; }
   body::before {
@@ -383,8 +390,8 @@ body {
     height: 0;
     opacity: 0;
     background-color: #FFF;
-    -webkit-transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), height 0.1s linear 0.5s;
-    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), height 0.1s linear 0.5s;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), height 0.1s linear 0.5s;
+    transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), height 0.1s linear 0.5s;
     z-index: 100; }
 
 .logotext {
@@ -484,26 +491,25 @@ body {
         -webkit-transition: all 0ms;
         transition: all 0ms; }
   .worksList ul.worksTitle {
+    font-family: 'Druk Wide Web';
     margin-left: 60px; }
     @media (max-width: 768px) {
       .worksList ul.worksTitle {
         width: calc(100% - 170px); } }
     .worksList ul.worksTitle li {
+      font-family: 'Druk Wide Web';
       list-style: none;
-      font-size: 50px;
-      line-height: 1.5em;
+      font-size: 36px;
+      line-height: 2em;
       font-weight: 800;
       font-style: italic;
-      -webkit-transform: scale(1, 0.7);
-          -ms-transform: scale(1, 0.7);
-              transform: scale(1, 0.7);
-      letter-spacing: 2px; }
+      letter-spacing: 3px; }
       @media (max-width: 1080px) {
         .worksList ul.worksTitle li {
-          font-size: 40px; } }
+          font-size: 30px; } }
       @media (max-width: 920px) {
         .worksList ul.worksTitle li {
-          font-size: 32px; } }
+          font-size: 24px; } }
       .worksList ul.worksTitle li a {
         text-decoration: none;
         color: #000000;
@@ -519,7 +525,7 @@ body {
           position: absolute;
           bottom: 0px;
           width: 0;
-          height: 5px;
+          height: 6px;
           background-color: #000;
           -webkit-transition: all .1s ease;
           transition: all .1s ease;
@@ -533,7 +539,7 @@ body {
 
 .profile {
   margin-left: 60px;
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 30px;
   padding-bottom: 100px;
   position: relative;
@@ -545,12 +551,9 @@ body {
     .profile {
       font-size: 32px; } }
   .profile p {
-    line-height: 2.2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2em;
     font-weight: 800;
-    font-style: italic;
-    -webkit-transform: scale(1, 0.7);
-        -ms-transform: scale(1, 0.7);
-            transform: scale(1, 0.7);
     letter-spacing: 2px; }
     .profile p a {
       text-decoration: none;
@@ -561,7 +564,7 @@ body {
       .profile p a::after {
         content: '';
         position: absolute;
-        bottom: 10px;
+        bottom: 8px;
         right: 0;
         left: 0;
         width: 0;
